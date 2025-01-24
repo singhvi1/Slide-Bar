@@ -1,0 +1,128 @@
+/* cdnjs se link head (wali_font awesome )
+font awesome
+ */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.main_box{
+    background: url("./sources/photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one i {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+
+    /* postion */
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition:all 0.2s ease ;
+}
+
+/* Sidebar */
+
+.sidebar_menu{
+    position:fixed ;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color:rgb(255,255,255,.1);
+    box-shadow: 10px 10px 6px rgb(255, 255, 255 , 0.5 );
+    /* box shadow: x offset  , y offset ,blurrradius */
+    border: 2px solid black;
+
+    /* adding transition effect on sidebar */
+    transition:all 0.3s linear ;
+}
+.sidebar_menu .logo{
+    position:absolute;
+    width: 100%;
+    line-height: 60px; 
+    box-shadow: 0 0 6px rgb(255, 255, 255, .5);
+    height: 60px;
+}
+
+/* apnacollege */
+.sidebar_menu .logo a {
+    position:absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar_menu .btn_two i{
+    position: absolute;
+    left: 275px;
+    color: grey;
+    font-size: 20px;
+    line-height: 60px;
+    /* opacity: 0; */
+    cursor:pointer;
+    transition:all 0.2s linear ;
+}
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 12px;
+}
+.sidebar_menu .menu li a,i{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+
+
+/*social media*/
+.social_media{
+    position: absolute;
+    bottom: 5%;
+    left: 19%;
+}
+.social_media i{
+    color: white;
+    opacity: .5;
+    padding: 0 5px;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 2px rgb(255, 255, 255,.5);
+}
+.btn_one i:hover{
+
+    font-size:25px;
+}
+.sidebar_menu .btn_two i:hover{
+    font-size:30px;
+}
+.social_media i:hover{
+    opacity: 1;
+    transform: scale(1.5);
+}
+#check:checked ~ .sidebar_menu {
+    left: 0;
+    
+}
+
+/* hiding hamberger menu */
+#check:checked ~ .btn_one {
+    opacity: 0;
+}
+ 
